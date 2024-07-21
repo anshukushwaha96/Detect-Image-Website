@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web AI App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader" class="overlay">
+        <span class="loader"></span>
+    </div>
+    <div class="container">
+        <div class="left-box">
+            <!-- logo  -->
+            <div class="logo">
+                <img src="https://e7.pngegg.com/pngimages/202/736/png-clipart-logo-product-design-brand-font-adobe-illustrator-text-trademark-thumbnail.png"
+                    alt="">
+                <p style="margin-top: 18px; font-weight: bold; font-family: sans-serif;">AI Web App</p>
+            </div>
+            <!-- container -->
+            <div>
+                <h3>AI-Powered Fun with Web App</h3>
+                <p style="margin-top: -10px; color: grey;">Let's Play Together!</p>
+            </div>
+
+            <!-- File container -->
+            <div class="drop-zone">
+                <input id="file" type="file" hidden>
+                <label id="chooseimg" for="file">Choose Your Image</label>
+            </div>
+
+            <!-- service container -->
+            <div class="service-container">
+                <div class="service-item">
+                    <input value="ObjectDetection" id="object-detection" name="service" type="radio">
+                    <label for="object-detection">Object Detection</label>
+                </div>
+                <div class="service-item">
+                    <input value="FaceDetection" type="radio" id="face-detection" name="service">
+                    <label for="face-detection">Face Detection</label>
+                </div>
+                <div class="service-item">
+                    <input value="CelebrityDetection" type="radio" id="celebrity-detection" name="service">
+                    <label for="celebrity-detection">Celebrity Detection</label>
+                </div>
+            </div>
+            <!-- Button -->
+          
+            <div id="button" class="btn">See The Magic</div>
+          
+
+        </div>
+        <div class="right-box"><img id="right-img" src="https://imagesvibe.com/wp-content/uploads/2023/05/Cute-Rabbit-Images29.jpg"
+                alt=""></div>
+    </div>
+    <div id="myModal" class="modal">
+        <!-- <div class="modal-content"> -->
+            <img id="result-image" alt="">
+        <!-- </div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
